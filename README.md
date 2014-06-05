@@ -1,4 +1,4 @@
-spoj
+SPOJ
 ====
 
 Solutions to the SPOJ Classical Problem Set

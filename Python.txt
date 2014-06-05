@@ -1,6 +1,15 @@
 Progress on Problem Set
 
-1: Complete
-2: Time
-3: Complete
+    Personal            SPOJ            Notes
+    
+1:  Complete            Correct         
+2:  Incomplete          Time            new find if prime function required
+3:  Complete            Doesn't test    Simple program SPOJ only tests for certain languages
+4:  WiP                 -               -
+5:
+6:
+7:
+8:
+9:
+10: 
 
