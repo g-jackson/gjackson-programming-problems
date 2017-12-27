@@ -1,5 +1,3 @@
-
-
 def solve1(registers):
     pastresults = {}
     newstate = True
