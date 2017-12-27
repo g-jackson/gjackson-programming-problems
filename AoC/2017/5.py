@@ -40,8 +40,8 @@ def solve2(steps):
 
     return moves
 
-with open('5in.txt', 'r') as myfile:
-    test = myfile.read()
+with open('5in.txt', 'r') as infile:
+    test = infile.read()
     test = [int(x) for x in list(test.split('\n'))]
 
 #test = [0,3,0,1,-3]

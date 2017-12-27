@@ -32,8 +32,8 @@ def solve2(instring):
 
 
 tests = ''
-with open('4in.txt', 'r') as myfile:
-    tests = myfile.read()
+with open('4in.txt', 'r') as infile:
+    tests = infile.read()
 
 print solve1(tests)
 print solve2(tests)

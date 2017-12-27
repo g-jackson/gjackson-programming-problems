@@ -3,14 +3,15 @@ AoC 2017
 
 http://adventofcode.com/2017/
 
-Progress:
+
+Progress: 15/50
 1:      **
 2:      **
 3:      *
 4:      **
 5:      **
 6:      **
-7:      -
+7:      **
 8:      -
 9:      -
 10:     -
