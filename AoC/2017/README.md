@@ -4,7 +4,7 @@ AoC 2017
 http://adventofcode.com/2017/
 
 
-Progress: 34/50
+Progress: 35/50
 
 - 1:      **
 - 2:      **
@@ -29,5 +29,5 @@ Progress: 34/50
 - 21:     -
 - 22:     -
 - 23:     -
-- 24:     -
+- 24:     *
 - 25:     *

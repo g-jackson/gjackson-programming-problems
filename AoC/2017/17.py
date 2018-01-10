@@ -16,7 +16,6 @@ def solve1(rotations):
 
 def solve2(rotations):
     spins = 50000000
-
     #spins = 9
     size = 1
     current = 1
