@@ -90,7 +90,7 @@ def solve2b(inlist):
     return starting
 
 
-with open('13in.txt', 'r') as infile:
+with open('inputs/13in.txt', 'r') as infile:
     test = infile.read()
 
 #test = sample1

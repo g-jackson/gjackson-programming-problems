@@ -153,7 +153,7 @@ def solve2(inlist):
 
 
 
-with open('8in.txt', 'r') as infile:
+with open('inputs/8in.txt', 'r') as infile:
     test = infile.read()
 
 #test = sample1

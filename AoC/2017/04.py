@@ -32,7 +32,7 @@ def solve2(instring):
 
 
 tests = ''
-with open('4in.txt', 'r') as infile:
+with open('inputs/4in.txt', 'r') as infile:
     tests = infile.read()
 
 print solve1(tests)

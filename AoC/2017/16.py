@@ -37,7 +37,7 @@ def solve2(inlist):
 
 
 
-with open('16in.txt', 'r') as infile:
+with open('inputs/16in.txt', 'r') as infile:
     test = infile.read()
 
 #test = sample1

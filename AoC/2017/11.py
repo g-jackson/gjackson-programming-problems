@@ -35,7 +35,7 @@ def solve2(intext):
     return max_distance
 
 
-with open('11in.txt', 'r') as infile:
+with open('inputs/11in.txt', 'r') as infile:
     tests = infile.read()
 #tests = 'ne,ne,ne'
 print tests

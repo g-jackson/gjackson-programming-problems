@@ -103,7 +103,7 @@ def towerweight(tower, name):
     return weight
 
 
-with open('7in.txt', 'r') as infile:
+with open('inputs/7in.txt', 'r') as infile:
     test = infile.read()
 
 #test = sample1

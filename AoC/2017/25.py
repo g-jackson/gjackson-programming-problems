@@ -86,7 +86,7 @@ def solve1(inlist):
 def solve2(inlist):
     return
 
-with open('25in.txt', 'r') as infile:
+with open('inputs/25in.txt', 'r') as infile:
     test = infile.read()
 
 #test = sample1

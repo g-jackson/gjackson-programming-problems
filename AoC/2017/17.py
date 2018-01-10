@@ -13,7 +13,7 @@ test = "flqrgnkx"
 test = sample1
 
 
-with open('17in.txt', 'r') as infile:
+with open('inputs/17in.txt', 'r') as infile:
     tests = infile.read()
 
 #print test

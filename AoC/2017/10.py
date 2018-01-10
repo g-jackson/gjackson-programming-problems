@@ -63,7 +63,7 @@ def solve2(intext):
 
 
 
-with open('10in.txt', 'r') as infile:
+with open('inputs/10in.txt', 'r') as infile:
     tests = infile.read()
 
 #tests = sample1

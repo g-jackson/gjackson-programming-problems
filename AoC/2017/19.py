@@ -99,7 +99,7 @@ def solve2(inlist):
     return counter
 
 
-with open('19in.txt', 'r') as infile:
+with open('inputs/19in.txt', 'r') as infile:
     test = infile.read()
 
 #test = sample1

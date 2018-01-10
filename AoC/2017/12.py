@@ -66,7 +66,7 @@ def solve2(inlist):
     return groups
 
 
-with open('12in.txt', 'r') as infile:
+with open('inputs/12in.txt', 'r') as infile:
     test = infile.read()
 
 #test = sample1

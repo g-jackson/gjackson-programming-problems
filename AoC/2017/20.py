@@ -55,7 +55,7 @@ def solve2(inlist):
 
 
 
-with open('20in.txt', 'r') as infile:
+with open('inputs/20in.txt', 'r') as infile:
     test = infile.read()
 
 #test = sample1
