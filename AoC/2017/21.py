@@ -116,7 +116,40 @@ def solve1(inlist):
 
 
 def solve2(inlist):
-    return 
+    iterations = 18#5
+    translations = readinput(inlist)
+    
+    print "Translations"
+    '''
+    for translation in translations:
+        for size in translation:
+            print size[0]
+            print size[1]
+    '''
+    pattern = np.array([['.', '#', '.'],['.', '.', '#'], ['#', '#', '#']])
+    #pattern = np.array([['#', '.', '.', '#'], ['.', '.', '.', '.'], ['.', '.', '.', '.'], ['#', '.', '.', '#']])
+    print pattern
+    count = 0
+    for i in range(iterations):
+        splitlist = split(pattern)
+        newpattern = []
+        for subarray in splitlist:
+            matched = match(translations,subarray)
+            #print "Translating"
+            #print subarray
+            #print "To"
+            #print matched
+            newpattern.append(matched)
+
+        pattern = combine(newpattern)
+        print pattern
+        count = 0
+        for x in pattern:
+            for y in x:
+                count = count + y.count('#')
+        print count
+
+    return count
 
 
 with open('inputs/21in.txt', 'r') as infile:

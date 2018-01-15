@@ -1,13 +1,8 @@
 sample1 ='''p=<3,0,0>, v=<2,0,0>, a=<-1,0,0>
 p=<4,0,0>, v=<0,0,0>, a=<-2,0,0>'''
 
-
-# Pretty hacky, assumes the closest point resolves quickly
-def solve1(inlist):
-    minimum = 1000000000
-    ticks = 2000
-    counter = 0
-    minpoint = 0
+def readinput(inlist):
+    points = []
     for particle in inlist:
         p = particle.split(' ')[0]
         p = p[p.find('<')+1:p.find('>')].split(',')
@@ -18,15 +13,27 @@ def solve1(inlist):
         a = particle.split(' ')[2]
         a = a[a.find('<')+1:a.find('>')].split(',')
         a = map(int, a)
+        points.append((p,v,a))
+    return points
+
+# Pretty hacky, assumes the closest point resolves quickly
+def solve1(inlist):
+    minimum = 1000000000
+    ticks = 2000
+    counter = 0
+    minpoint = 0
+    points = readinput(inlist)
+    for point in points:
         for i in range(ticks):
+            p,v,a = point
             newdistance = abs(p[0]+ (v[0] + ticks*a[0])) + abs(p[1]+ (v[1] + ticks*a[1])) + abs(p[2]+ (v[2] + ticks*a[2]))
-            
-        print newdistance
-        if newdistance < minimum:
-            minimum = newdistance
-            minpoint = counter
-        counter = counter + 1
-    return minpoint
+        
+            print newdistance
+            if newdistance < minimum:
+                minimum = newdistance
+                minpoint = counter
+            counter = counter + 1
+            return minpoint
 
 def solve2(inlist):
     minimum = 1000000000
@@ -50,7 +57,7 @@ def solve2(inlist):
     for tick in range(ticks):
         tickpoints = []
         for particle in particles:
-            tickpoints[] = 
+            print particles 
     return
 
 
@@ -62,6 +69,6 @@ with open('inputs/20in.txt', 'r') as infile:
 test = test.split('\n')
 
 #print test
-#print solve1(test)
-print solve2(test)
+print solve1(test)
+#print solve2(test)
 
