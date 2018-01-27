@@ -6,7 +6,7 @@ jnz a 2
 dec a'''
 
 def solve1(intext):
-    registers = {'a':0,'b':0,'c':0,'d':0}
+    registers = {'a':0,'b':0,'c':1,'d':0}
     pc = 0
     while pc < len(intext):
         line = intext[pc]
