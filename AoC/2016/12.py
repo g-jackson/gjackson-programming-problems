@@ -11,8 +11,8 @@ def solve1(intext):
     while pc < len(intext):
         line = intext[pc]
         line = line.split()
-        print registers
-        print line
+        #print registers
+        #print line
         instruction = line[0]
         if instruction == "inc":
             registers[line[1]] = registers[line[1]] + 1
@@ -27,9 +27,13 @@ def solve1(intext):
             if line[1].islower():
                 if registers[line[1]] != 0:
                     pc = pc + (int)(line[2])
+                else:
+                    pc = pc + 1  
             else:
                 if (int)(line[1]) != 0:
                     pc = pc + (int)(line[2])
+                else:
+                    pc = pc + 1  
         else:
             pc = pc + 1    
 
