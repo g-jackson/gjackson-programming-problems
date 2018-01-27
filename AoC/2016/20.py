@@ -28,7 +28,7 @@ def solve2(intext):
     inlist = sorted(inlist, key=lambda x: x[0])
     #for line in inlist:
         #print line[0]
-    total = 4294967296
+    total = 4294967295
     lowest = inlist[0][1]
     start = inlist[0][0]
     allowed = start
