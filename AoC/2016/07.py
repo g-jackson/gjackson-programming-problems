@@ -8,7 +8,7 @@ def solve2(intext):
     return 
 
 
-with open('inputs/01in.txt', 'r') as infile:
+with open('inputs/07in.txt', 'r') as infile:
     tests = infile.read()
 
 test = sample1
