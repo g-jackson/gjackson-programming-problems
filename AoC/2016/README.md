@@ -4,12 +4,12 @@ AoC 2016
 http://adventofcode.com/2016/
 
 
-Progress: 20/50
+Progress: 22/50
 
 - 1:      **
 - 2:      **
 - 3:      **
-- 4:      -
+- 4:      **
 - 5:      **
 - 6:      **
 - 7:      -

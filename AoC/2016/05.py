@@ -27,7 +27,7 @@ def solve2(intext):
                     if password[pos] == '-':
                         password[pos] = hashed[6]
                         resolved = resolved + 1
-            print hashed, ''.join(password)
+            print hashed, ''.join(password), hashing
 
         counter = counter + 1
     return ''.join(password)
