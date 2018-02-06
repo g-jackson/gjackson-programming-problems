@@ -23,8 +23,16 @@ def solve1(intext):
     return total
 
 def solve2(intext):
-
-    return 
+    disks = readinput(intext)
+    total = 0
+    connections = {}
+    for idisk in disks:
+        data = disks[idisk][0]
+        for jdisk in disks:
+            if idisk != jdisk and data <= disks[jdisk][1] - disks[jdisk][0]:
+                print idisk, "data fits on", jdisk , "it has", data, "and there is avail", disks[jdisk][1] - disks[jdisk][0]
+                total = total + 1
+    return total
 
 
 with open('inputs/22in.txt', 'r') as infile:
