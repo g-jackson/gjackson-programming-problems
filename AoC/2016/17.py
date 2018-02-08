@@ -66,7 +66,6 @@ def solve2(intext):
                 else:
                     if len(tohash) > result:
                         result = len(tohash)
-                        #print tohash                    
         if opened[1]:
             if pos[1] < 3:
                 if (pos[0],pos[1]+1) != (3,3):
@@ -74,7 +73,6 @@ def solve2(intext):
                 else:
                     if len(tohash) > result:
                         result = len(tohash)
-                        #print tohash    
         if opened[2]:
             if pos[0] > 0:
                 if (pos[0]-1,pos[1]) != (3,3):
@@ -82,7 +80,6 @@ def solve2(intext):
                 else:
                     if len(tohash) > result:
                         result = len(tohash)
-                        #print tohash    
         if opened[3]:
             if pos[0] < 3:
                 if (pos[0]+1,pos[1]) != (3,3):
@@ -90,7 +87,6 @@ def solve2(intext):
                 else:
                     if len(tohash) > result:
                         result = len(tohash)
-                        #print tohash    
     return result - len(intext) + 1
 
 
