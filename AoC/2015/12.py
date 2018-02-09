@@ -8,10 +8,10 @@ def solve2(intext):
     return 
 
 
-with open('inputs/01in.txt', 'r') as infile:
+with open('inputs/12in.txt', 'r') as infile:
     tests = infile.read()
 
-test = sample1
+tests = sample1
 print tests
 
 print solve1(tests)
