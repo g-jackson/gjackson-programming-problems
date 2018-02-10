@@ -4,11 +4,11 @@ AoC 2015
 http://adventofcode.com/2015/
 
 
-Progress: 2/50
+Progress: 6/50
 
 - 1:      **
-- 2:      -
-- 3:      -
+- 2:      **
+- 3:      **
 - 4:      -
 - 5:      -
 - 6:      -
