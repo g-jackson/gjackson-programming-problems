@@ -58,7 +58,6 @@ def solve2(intext):
         guests["me"][guest] = 0
         guests[guest]["me"] = 0
 
-
     highscore = 0
     for permutation in permutations(guests):
         #print permutation
