@@ -12,7 +12,6 @@ sample1='''1
 10
 11'''
 
-def splitter(weights, split, maxsize=0, minsize=1):
     if maxsize == 0:
         maxsize = len(weights)
 
@@ -45,6 +44,7 @@ def solve1(intext):
             combo = (mcombo, lcombo, rcombo)
             if len(combo[0]) <= minpackages:
                 minpackages = len(combo[0])
+                product = 
                 if reduce(mul, combo[0], 1) < minqe:
                     minqe = reduce(mul, combo[0], 1)
                     smallest = combo
