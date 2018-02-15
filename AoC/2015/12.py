@@ -1,4 +1,5 @@
 import re
+import json
 
 sample1=''''''
 
@@ -8,9 +9,28 @@ def solve1(intext):
     #print removed
     return sum(removed)
 
-def solve2(intext):
+def parsejson(jsonin):
+    # Get value if int
+    if type(jsonin) == int:
+        return jsonin
+    # Ignore strings
+    if type(jsonin) == unicode:
+        return 0
+    # Get value if array(list)
+    if type(jsonin) == list:
+        return sum([parsejson(subobject) for subobject in jsonin])
+    # if object with red ignore else parse
+    if type(jsonin) == dict:
+        if 'red' in jsonin.values():
+            return 0
+        else:
+            return parsejson(list(jsonin.values()))
 
-    return 
+def solve2(intext):
+    jsonin = json.loads(intext)
+    parsejson(jsonin)
+    #print json.dumps(jsonin, sort_keys=True,indent=4, separators=(',', ': '))
+    return parsejson(jsonin)
 
 
 with open('inputs/12in.txt', 'r') as infile:
@@ -21,4 +41,4 @@ with open('inputs/12in.txt', 'r') as infile:
 #print tests
 
 print solve1(tests)
-#print solve2(tests)
+print solve2(tests)
