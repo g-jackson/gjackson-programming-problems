@@ -16,7 +16,6 @@ def solve1(intext):
     row = (int)(intext.split()[-3][:-1])
     col = (int)(intext.split()[-1][:-1])
     print row,col
-
     pos = getpos(row,col)
     print pos
     return getvalue(pos)

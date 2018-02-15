@@ -12,6 +12,7 @@ sample1='''1
 10
 11'''
 
+def splitter(weights, split, maxsize=0, minsize=0)
     if maxsize == 0:
         maxsize = len(weights)
 
