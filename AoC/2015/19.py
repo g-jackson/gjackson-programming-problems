@@ -1,5 +1,4 @@
 import re
-from operator import itemgetter
 
 sample1='''H => HO
 H => OH
