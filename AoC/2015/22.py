@@ -77,7 +77,6 @@ def solve1(intext):
             news["manaspent"] += 53
             news["bosshp"] -= 4
             bfs.append(bossturn(news))
-            #endstate = bossturn(hp, mana, bosshp, bossdmg, manaspent, poison, shield, recharge)
         # Drain
         if s["mana"] >= 73:
             news = s.copy()
@@ -145,8 +144,8 @@ def solve2(intext):
             minmana = s["manaspent"]
             winningcombo = s["cast"]
             continue
+        # Check if boss killed player
         if s["hp"] < 1:
-            #print "player killed by boss"
             continue
         # Check if HM tick killed
         s["hp"] -= 1

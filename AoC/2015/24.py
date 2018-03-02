@@ -1,4 +1,4 @@
-from itertools import combinations
+from itertools import combinations, permutations
 from operator import mul
 
 sample1='''1
@@ -12,7 +12,7 @@ sample1='''1
 10
 11'''
 
-def splitter(weights, split, maxsize=0, minsize=0)
+def splitter(weights, split, maxsize=0, minsize=0):
     if maxsize == 0:
         maxsize = len(weights)
 
@@ -23,6 +23,10 @@ def splitter(weights, split, maxsize=0, minsize=0)
                 combos.append(list(j))
     return combos
 
+
+
+
+# Very long runtime
 def solve1(intext):
     weights =  map(int, intext)[::-1]
     maxmiddle = len(weights)/3
@@ -45,18 +49,26 @@ def solve1(intext):
             combo = (mcombo, lcombo, rcombo)
             if len(combo[0]) <= minpackages:
                 minpackages = len(combo[0])
-                product = 
-                if reduce(mul, combo[0], 1) < minqe:
-                    minqe = reduce(mul, combo[0], 1)
+                product = reduce(mul, combo[0], 1)
+                if product < minqe:
+                    minqe = product
                     smallest = combo
                     print "minqe:", minqe
 
     print smallest, minqe, minpackages
     return minqe
 
-def solve2(intext):
 
-    return 
+def solve2(intext):
+    weights =  map(int, intext)[::-1]
+    groups = 4
+    split = sum(weights)/groups
+    for i in range(len(weights)):
+        qes = [reduce(mul, c) for c in combinations(weights, i) if sum(c) == split]
+        # Assuming we can generate three more even groups with remaining gifts 
+        if len(qes) != 0:
+            return min(qes)
+
 
 
 with open('inputs/24in.txt', 'r') as infile:
@@ -65,5 +77,5 @@ with open('inputs/24in.txt', 'r') as infile:
 #tests = sample1
 #print tests
 tests = tests.split('\n')
-print solve1(tests)
-#print solve2(tests)
+#print solve1(tests)
+print solve2(tests)
