@@ -1,4 +1,5 @@
-testinputs = ["abcdef","bababc","abbcde","abcccd","aabcdd","abcdee","ababab"]
+#testinputs = ["abcdef","bababc","abbcde","abcccd","aabcdd","abcdee","ababab"]
+testinputs = ["abcde", "fghij", "klmno", "pqrst", "fguij", "axcye", "wvxyz"]
 
 def a(inputs):
     sumtwo = 0
@@ -25,14 +26,25 @@ def count_letters(word, char):
 
 
 def b(inputs):
-    return
-
+    for input in inputs:
+        for match in inputs:
+            comparison = zip(input, match)
+            count = 0
+            for char in comparison:
+                if char[0] == char[1]:
+                    count += 1
+            if count == len(input) - 1:
+                result = ""
+                for char in comparison:
+                    if char[0] == char[1]:
+                        result += char[0]
+                return result
 
 
 with open('inputs/02in.txt', 'r') as infile:
     inputs = infile.read()
 inputs = inputs.split()
-print inputs
+#print inputs
 
 #print a(inputs)
 print b(inputs)
