@@ -1,4 +1,4 @@
-6dtestinputs = [-6, +3, +8, +5, -6]
+testinputs = "dabAcCaCBAcCcaDA"
 
 def a(inputs):
     return
@@ -12,5 +12,5 @@ with open('inputs/05in.txt', 'r') as infile:
 inputs = inputs.split()
 
 
-print a(inputs)
-print b(inputs)
+print(a(inputs))
+print(b(inputs))
