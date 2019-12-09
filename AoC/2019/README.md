@@ -4,10 +4,10 @@ AoC 2019
 http://adventofcode.com/2019/
 
 
-Progress: 2/50
+Progress: 4/50
 
 - 1:      **
-- 2:      
+- 2:      **
 - 3:      
 - 4:      
 - 5:      
