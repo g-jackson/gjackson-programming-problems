@@ -4,7 +4,7 @@ AoC 2019
 http://adventofcode.com/2019/
 
 
-Progress: 12/50
+Progress: 14/50
 
 - 1:      **
 - 2:      **
@@ -13,7 +13,7 @@ Progress: 12/50
 - 5:      **
 - 6:      **
 - 7:      
-- 8:      
+- 8:      **
 - 9:      
 - 10:     
 - 11:     
