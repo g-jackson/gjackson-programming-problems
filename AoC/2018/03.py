@@ -5,7 +5,7 @@ def a(inputs):
     sheet = set()
     collisions = set()
     for input in inputs:
-        print input
+        print(input)
         input = input.split(",")
         x = int(input[0].split(" ")[-1])
         y = int(input[1].split(":")[0])
@@ -68,5 +68,5 @@ with open('inputs/03in.txt', 'r') as infile:
 inputs = inputs.split("\n")
 
 
-#print a(inputs)
-print b(inputs)
+print(a(inputs))
+print(b(inputs))

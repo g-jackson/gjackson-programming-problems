@@ -24,6 +24,6 @@ inputs = inputs.split()
 for i in range(len(inputs)):
     inputs[i] = int(inputs[i])
 
-print a(inputs)
-print b(inputs)
+print(a(inputs))
+print(b(inputs))
 #print tests

@@ -16,7 +16,7 @@ def a(inputs):
             sumtwo += 1
         if addthree:
             sumthree += 1
-        print input, addtwo, addthree, sumtwo, sumthree
+        print(input, addtwo, addthree, sumtwo, sumthree)
     return sumtwo * sumthree
 
 
@@ -44,7 +44,6 @@ def b(inputs):
 with open('inputs/02in.txt', 'r') as infile:
     inputs = infile.read()
 inputs = inputs.split()
-#print inputs
 
-#print a(inputs)
-print b(inputs)
+#print(a(inputs))
+print(b(inputs))

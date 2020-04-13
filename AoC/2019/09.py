@@ -1,8 +1,9 @@
-testinputs = """2 3 0 3 10 11 12 1 1 0 1 99 2 1 1 2"""
+testinputs = []
+
 
 def a(inputs):
-    print(inputs)
     return
+
 
 def b(inputs):
     return
@@ -12,7 +13,10 @@ with open('inputs/09in.txt', 'r') as infile:
     inputs = infile.read()
 inputs = inputs.split()
 
+for i in range(len(inputs)):
+    inputs[i] = int(inputs[i])
 
-print(a(testinputs.split()))
-print(b(inputs))
 
+print(a(testinputs))
+#print(b(inputs))
+#print tests
