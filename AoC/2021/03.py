@@ -1,6 +1,3 @@
-import re
-
-
 test_inputs1 = '''00100
 11110
 10110
