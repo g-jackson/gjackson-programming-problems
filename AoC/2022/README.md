@@ -4,14 +4,14 @@ AoC 2022
 http://adventofcode.com/2022/
 
 
-Progress: 10/50
+Progress: 12/50
 
 - 1:    **
 - 2:    **
 - 3:    **
 - 4:    **
 - 5:    **
-- 6:
+- 6:    **
 - 7:
 - 8:
 - 9:
